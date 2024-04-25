@@ -1,21 +1,45 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="en">
 
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Personal Blog</title>
-    <link rel="stylesheet" href="./assets/css/form.css">
+    <link rel="stylesheet" href="./assets/css/form.css" />
     <link rel="stylesheet" href="./assets/css/styles.css" />
   </head>
 
-  <body>
+  <body class="container-light light">
     <header>
+      <div class="mode-switcher">
+        <span class="icon">🌞</span>
+      </div>
     </header>
-    <main>
-        <form>
-        </form>
-    </main>
+        <div class="container">
+          <div class="container-circle">
+            <div class="circle">
+              <span class="first-blog">My First Blog</span>
+            </div>
+          </div>
+        <div class="container-form">
+          <form>
+            <h2>What's on your mind?</h2>
+            <div class="input">
+              <label for="username">Username</label><br>
+              <input type="text" id="username" />
+            </div>
+            <div class="input">
+              <label for="title">Title</label><br>
+              <input type="title" id="title" />
+            </div>
+            <div class="input">
+              <label for="content">Content</label><br>
+              <input type="content" id="content" />
+            </div>
+            <button class="submit" type="submit">Submit</button>
+          </form>
+        </div>
+      </div>
     <script src="./assets/js/form.js"></script>
     <script src="./assets/js/logic.js"></script>
   </body>
