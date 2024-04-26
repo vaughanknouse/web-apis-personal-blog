@@ -42,11 +42,15 @@ THEN I am presented with a link to the developer's portfolio.
 ```
 
 ## Mock Up
-The following image shows the web application's appearance: ***
+The following image shows the web application's appearance:
 
-![Shows first page of deployed web application entitled My First Blog as well as a form with labels and inputs for username, blog title, and blog content.](assets/images/***)
+![Shows first page of deployed web application in light mode entitled "My First Blog" as well as a form with labels and inputs for username, blog title, and blog content.](assets/images/Personal-blog-page-1-light.png)
 
-![Shows second page of deployed web application with a list of blog post entries, including titles, content, and author of the posts.](assets/images/***)
+![Shows second page of deployed web application in light mode with a list of blog post entries, including titles, content, and author of the posts.](assets/images/Personal-blog-page-2-light.png)
+
+![Shows first page of deployed web application in dark mode entitled "My First Blog" as well as a form with labels and inputs for username, blog title, and blog content.](assets/images/Personal-blog-page-1-dark.png)
+
+![Shows second page of deployed web application in dark mode with a list of blog post entries, including titles, content, and author of the posts.](assets/images/Personal-blog-page-2-dark.png)
 
 ## Link to Deployed Application
 
@@ -54,7 +58,9 @@ The following image shows the web application's appearance: ***
 
 ## Credits
 Used the following sources as tutorials and guidelines:
-***
+https://github.com/ikatyang/emoji-cheat-sheet/blob/master/README.md
+
+https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage
 
 Also utilized the Xpert Learning assistant for some portions of my code:
 https://bootcampspot.instructure.com/courses/5293/external_tools/313
