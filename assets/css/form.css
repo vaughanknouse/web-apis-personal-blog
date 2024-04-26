@@ -1,3 +1,18 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    border-top: 8px double black;
+}
+
+.container-circle {
+    border-right: 3px solid black;
+    flex: 45%;
+    margin-right: 2px;
+    display: flex;
+    justify-content: center;
+}
 
 .circle {
     height: 400px;
@@ -15,21 +30,6 @@
     font-size: 48px;
     color: white;
 }
-.container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    border-top: 8px double black;
-}
-
-.container-circle {
-    border-right: 3px solid black;
-    flex: 45%;
-    margin-right: 2px;
-    display: flex;
-    justify-content: center;
-}
 
 .container-form {
     border-left: 3px solid black;
@@ -37,12 +37,15 @@
     margin-left: 2px;
 }
 
-h2{
-    text-align: center;
-    font-size: 35px;
-}
+form {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 600px;
+    font-size: 18px;
+} 
 
-.input{
+.input {
     text-align: left;
     margin: 10px auto;
     width: 80%;
@@ -52,15 +55,19 @@ input {
     width: 100%;
     margin: 10px auto;
     padding: 10px;
+    resize: vertical;
 }
 
-form{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    height: 600px;
-    font-size: 18px;
-} 
+textarea {
+    width: 100%;
+    resize: vertical;
+    min-height: 100px;
+}
+
+#content {
+    height: 100px;
+    margin: 10px auto;
+}
 
 button {
     text-align: center;
@@ -72,17 +79,7 @@ button {
     font-size: 18px;
 }
 
-#content {
-    height: 100px;
-}
-
-.dark {
-    background-color:#243447;
-    color: #bebebe
-   
-}
-
-.light {
-    background-color: white;
-    color: black;
+/* Adds a shadow on hover */
+.submit:hover {
+    box-shadow: 1px 5px 9px rgba(0, 0, 0, 1);
 }

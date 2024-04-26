@@ -1,9 +1,8 @@
-
-.container-right {
-    display: flex ;
-    justify-content: space-between;
-    align-items: center;
-    
+body {
+    display: flex;
+    min-height: 100vh;
+    margin: 0;
+    flex-direction: column;
 }
 
 header {
@@ -12,10 +11,12 @@ header {
     align-items: center;
 }
 
-h1{
-    padding-left: 30px;
-   
+.container-right {
+    display: flex ;
+    justify-content: space-between;
+    align-items: center;
 }
+
 .back {
     color: white;
     background-color: black;
@@ -23,8 +24,8 @@ h1{
     width: 80px;
 }
 
-.border{
-    border-bottom: 8px double black;
+.border {
+    border-bottom: 8px double;
 }
 
 .containerSection {
@@ -33,19 +34,21 @@ h1{
     flex: 1;
 }
 
+.containerSection div {
+    border: 1px solid;
+    margin: 10px 0;
+}
+
 .title {
     margin: 10px;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid;
+    font-size: 15px;
+    padding-bottom: .5em;
 }
 
-.paragraph{
+.paragraph {
     margin: 0 20px;
-    font-size: 16px;
-}
-
-.containerSection div {
-    border: 1px solid black;
-    margin: 10px 0;
+    font-size: 13px;
 }
 
 .postedBy {
@@ -54,41 +57,24 @@ h1{
     color: gray;
 }
 
-body{
-    display: flex;
-    min-height: 100vh;
-    margin: 0;
-    flex-direction: column;
-}
-
-footer{
+footer {
     border-top: 8px double black;
-}
-
-h6 {
-    margin: 20px;
-    text-align: center; 
+    text-align: left;
+    border-top: 10px double;
+    position: absolute;
+    width: 100%;
+    margin-top: 0;
+    bottom: 0;
 }
 
 footer p {
-    font-size: 16px;
+    font-size: 14px;
     margin: 10px 30px;
-    font-family: italic; 
+    font-style: italic; 
     font-weight: bold;
 }
 
-footer p a{
+footer p a {
     text-decoration: none;
-    color: black;
-}
-
-.dark {
-    background-color:#243447;
-    color: #bebebe;
-   
-}
-
-.light {
-    background-color: white;
     color: black;
 }

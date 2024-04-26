@@ -11,36 +11,43 @@
 
   <body class="container-light light">
     <header>
+      <!--Togg between light and dark mode -->
       <div class="mode-switcher">
         <span class="icon">🌞</span>
       </div>
     </header>
-        <div class="container">
-          <div class="container-circle">
-            <div class="circle">
-              <span class="first-blog">My First Blog</span>
-            </div>
-          </div>
-        <div class="container-form">
-          <form>
-            <h2>What's on your mind?</h2>
-            <div class="input">
-              <label for="username">Username</label><br>
-              <input type="text" id="username" />
-            </div>
-            <div class="input">
-              <label for="title">Title</label><br>
-              <input type="title" id="title" />
-            </div>
-            <div class="input">
-              <label for="content">Content</label><br>
-              <input type="content" id="content" />
-            </div>
-            <button class="submit" type="submit">Submit</button>
-          </form>
+  
+    <main class="container">
+      <!-- Page portion with circle image and text -->
+      <div class="container-circle">
+        <div class="circle">
+          <span class="first-blog">My First Blog</span>
         </div>
       </div>
+      <!-- Page portion with Blog submission form -->
+      <div class="container-form">
+        <!-- Form for submitting a new blog post -->
+        <form>
+          <h2>What's on your mind?</h2>
+          <div class="input">
+            <label for="username">Username</label><br>
+            <input type="text" id="username" />
+          </div>
+          <div class="input">
+            <label for="title">Title</label><br>
+            <input type="title" id="title" />
+          </div>
+          <div class="input">
+            <label for="content">Content</label><br>
+            <textarea id="content"></textarea>
+          </div>
+          <button type="submit" class="submit">Submit</button>
+        </form>
+      </div>
+    </main>
+    <!-- JavaScript files for form handling and logic -->
     <script src="./assets/js/form.js"></script>
     <script src="./assets/js/logic.js"></script>
   </body>
+
 </html>

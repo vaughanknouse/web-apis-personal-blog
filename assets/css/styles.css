@@ -5,8 +5,36 @@
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-.icon {
+:root {
+    --light-text: black;
+    --light-background: white;
+    --dark-text: #bebebe;
+    --dark-background: #243447;
+}
+
+body {
+    background-color: var(--light-background);
+    color: var(--light-text);
+}
+
+h1 {
+    padding-left: 30px;
+}
+
+h2 {
+    text-align: center;
     font-size: 35px;
+    padding-bottom: .5em;
+}
+
+h6 {
+    text-align: center;
+    font-size: 13px;
+    padding-top: 5px;
+}
+
+.icon {
+    font-size: 25px;
     margin: 20px;
     display: flex;
     justify-content: center;
@@ -14,13 +42,45 @@
 }
 
 .icon:hover{
-    background-color: grey;
     cursor: pointer;
 }
 
-
-.mode-switcher{
+.mode-switcher {
+    background-color: transparent;
+    border: none;
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    cursor: pointer;
 }
+
+/* Light Mode */
+.light {
+    background-color: white;
+    color: black;
+}
+
+.light button {
+    color: var(--dark-text);
+    background-color: var(--dark-background);
+}
+
+.light a {
+    color: var(--light-text);
+}
+
+/* Dark Mode */
+.dark {
+    background-color:#243447;
+    color: #bebebe;
+}
+
+.dark button {
+    color: var(--light-text);
+    background-color: var(--light-background);
+}
+
+.dark a {
+    color: var(--dark-text);
+}
+
